@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu + Design System • Grid 12 • Componentes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Página inicial">
+        <span class="logo-mark">N</span>
+        Navegação Pro
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="bars" aria-hidden="true">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </span>
+      </button>
+
+      <nav id="primary-nav" aria-label="Menu principal">
+        <div class="menu-panel" role="presentation">
+          <ul class="menu">
+            <li><a href="#">Início</a></li>
+            <li class="has-submenu">
+              <button class="submenu-toggle" aria-expanded="false">Serviços</button>
+              <ul class="submenu" role="menu">
+                <li><a href="#">Hotelaria</a></li>
+                <li><a href="#">Residencial</a></li>
+                <li><a href="#">Aluguel Temporada</a></li>
+                <li><a href="#">Não Residencial</a></li>
+                <li class="has-submenu">
+                  <button class="submenu-toggle" aria-expanded="false">Mais</button>
+                  <ul class="submenu" role="menu">
+                    <li><a href="#">Auditoria</a></li>
+                    <li><a href="#">Treinamento</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <button class="submenu-toggle" aria-expanded="false">Produtos</button>
+              <ul class="submenu" role="menu">
+                <li><a href="#">Locação Anual</a></li>
+                <li><a href="#">Locação Mensal</a></li>
+                <li><a href="#">Locação Via Plataformas Digitais</a></li>
+                <li><a href="#">Locação Via Rede Hoteleira</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a class="cta" href="#">Começar agora</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero row">
+      <div class="col-12 col-md-8">
+        <h1 class="h1">Menu Responsivo + Design System + Grid 12</h1>
+        <p class="muted">Exemplo em HTML5, CSS3 e JavaScript, com navegação avançada, grid customizado e componentes de UI.</p>
+        <div class="mt-24 flex gap-16">
+          <button class="btn btn-primary" id="btn-open-modal">Abrir modal</button>
+          <button class="btn btn-secondary" id="btn-toast">Mostrar toast</button>
+          <button class="btn btn-ghost" disabled>Botão desabilitado</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="surface">
+          <div class="alert alert-info"><strong>Info:</strong>&nbsp;Este projeto atende às especificações técnicas solicitadas.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="h2 mb-24">Projetos</h2>
+      <div class="grid-cards">
+        <article class="card">
+          <div class="flex items-center justify-between">
+            <h3 class="h3">Dashboard</h3>
+            <span class="badge badge-success">estável</span>
+          </div>
+          <p class="muted">Análises em tempo real e painéis customizáveis.</p>
+          <div class="mt-24 flex gap-16">
+            <button class="btn btn-primary">Abrir</button>
+            <button class="btn">Detalhes</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="flex items-center justify-between">
+            <h3 class="h3">Site institucional</h3>
+            <span class="badge badge-warning">em revisão</span>
+          </div>
+          <p class="muted">Páginas gerenciáveis e SEO básico.</p>
+          <div class="mt-24 flex gap-16"><button class="btn btn-primary">Abrir</button><button class="btn">Detalhes</button></div>
+        </article>
+
+        <article class="card">
+          <div class="flex items-center justify-between">
+            <h3 class="h3">App mobile</h3>
+            <span class="badge badge-danger">bloqueado</span>
+          </div>
+          <p class="muted">Protótipo navegável e autenticação social.</p>
+          <div class="mt-24 flex gap-16"><button class="btn btn-primary">Abrir</button><button class="btn">Detalhes</button></div>
+        </article>
+
+        <article class="card">
+          <div class="flex items-center justify-between">
+            <h3 class="h3">CMS</h3>
+            <span class="badge badge-info">beta</span>
+          </div>
+          <p class="muted">Gerenciamento de conteúdo e permissões.</p>
+          <div class="mt-24 flex gap-16"><button class="btn btn-primary">Abrir</button><button class="btn">Detalhes</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section row">
+      <div class="col-12 col-md-6">
+        <h2 class="h2 mb-24">Contato</h2>
+        <form class="form" novalidate>
+          <div class="field">
+            <label class="label" for="nome">Nome</label>
+            <input class="input" id="nome" name="nome" required minlength="3" placeholder="Seu nome completo" />
+            <span class="error">Informe um nome válido (mín. 3 caracteres).</span>
+          </div>
+          <div class="field">
+            <label class="label" for="email">E-mail</label>
+            <input class="input" id="email" name="email" type="email" required placeholder="voce@exemplo.com" />
+            <span class="error">Digite um e-mail válido.</span>
+          </div>
+          <div class="field">
+            <label class="label" for="assunto">Assunto</label>
+            <select class="select" id="assunto" required>
+              <option value="">Selecione...</option>
+              <option>Suporte</option>
+              <option>Comercial</option>
+              <option>Outros</option>
+            </select>
+            <span class="error">Selecione um assunto.</span>
+          </div>
+          <div class="field">
+            <label class="label" for="mensagem">Mensagem</label>
+            <textarea class="textarea" id="mensagem" required minlength="10" rows="4" placeholder="Como podemos ajudar?"></textarea>
+            <span class="error">Escreva ao menos 10 caracteres.</span>
+          </div>
+          <div class="flex gap-16">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-ghost">Limpar</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-md-6">
+        <h2 class="h2 mb-24">Feedback</h2>
+        <div class="alert alert-success mb-24"><strong>Sucesso:</strong>&nbsp;Seu perfil foi atualizado.</div>
+        <div class="alert alert-warning mb-24"><strong>Aviso:</strong>&nbsp;Conexão instável detectada.</div>
+        <div class="alert alert-danger"><strong>Erro:</strong>&nbsp;Não foi possível salvar as alterações.</div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast-wrap" id="toasts"></div>
+
+  <dialog class="modal" id="modalDemo" aria-labelledby="modal-title">
+    <div class="modal-header">
+      <h3 class="h3" id="modal-title">Modal de exemplo</h3>
+    </div>
+    <div class="modal-body">
+      <p class="muted">Este é um componente de <strong>modal</strong> usando &lt;dialog&gt; com foco, backdrop e botões de ação.</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" id="btn-close-modal">Cancelar</button>
+      <button class="btn btn-primary">Confirmar</button>
+    </div>
+  </dialog>
+  <footer>
+        <p>&copy; 2025 Jonatha Thiago. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

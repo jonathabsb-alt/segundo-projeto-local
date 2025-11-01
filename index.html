@@ -10,8 +10,8 @@
    <header>
     <div class="container header-inner">
       <a href="#" class="logo" aria-label="Página inicial">
-        <span class="logo-mark">N</span>
-        Navegação Pro
+        <span class="logo-mark">J</span>
+        J Empreendimentos imobiliários
       </a>
 
       <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-nav">
@@ -36,8 +36,8 @@
                 <li class="has-submenu">
                   <button class="submenu-toggle" aria-expanded="false">Mais</button>
                   <ul class="submenu" role="menu">
-                    <li><a href="#">Auditoria</a></li>
-                    <li><a href="#">Treinamento</a></li>
+                    <li><a href="#">Compra</a></li>
+                    <li><a href="#">Venda</a></li>
                   </ul>
                 </li>
               </ul>
@@ -53,7 +53,7 @@
             </li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
-            <li><a class="cta" href="#">Começar agora</a></li>
+
           </ul>
         </div>
       </nav>
@@ -63,30 +63,20 @@
   <main class="container">
     <section class="hero row">
       <div class="col-12 col-md-8">
-        <h1 class="h1">Menu Responsivo + Design System + Grid 12</h1>
-        <p class="muted">Exemplo em HTML5, CSS3 e JavaScript, com navegação avançada, grid customizado e componentes de UI.</p>
         <div class="mt-24 flex gap-16">
-          <button class="btn btn-primary" id="btn-open-modal">Abrir modal</button>
-          <button class="btn btn-secondary" id="btn-toast">Mostrar toast</button>
-          <button class="btn btn-ghost" disabled>Botão desabilitado</button>
         </div>
       </div>
-      <div class="col-12 col-md-4">
-        <div class="surface">
-          <div class="alert alert-info"><strong>Info:</strong>&nbsp;Este projeto atende às especificações técnicas solicitadas.</div>
-        </div>
-      </div>
+
     </section>
 
     <section class="section">
-      <h2 class="h2 mb-24">Projetos</h2>
+      <h2 class="h2 mb-24">Descubra mais</h2>
       <div class="grid-cards">
         <article class="card">
           <div class="flex items-center justify-between">
-            <h3 class="h3">Dashboard</h3>
-            <span class="badge badge-success">estável</span>
+            <h3 class="h3">Imóveis</h3>
           </div>
-          <p class="muted">Análises em tempo real e painéis customizáveis.</p>
+          <p class="muted">Conheça nosso catálogo de imóveis.</p>
           <div class="mt-24 flex gap-16">
             <button class="btn btn-primary">Abrir</button>
             <button class="btn">Detalhes</button>
@@ -96,35 +86,32 @@
         <article class="card">
           <div class="flex items-center justify-between">
             <h3 class="h3">Site institucional</h3>
-            <span class="badge badge-warning">em revisão</span>
           </div>
-          <p class="muted">Páginas gerenciáveis e SEO básico.</p>
+          <p class="muted">A história por trás do negócio.</p>
+          <div class="mt-24 flex gap-16"><button class="btn btn-primary">Abrir</button></div>
+        </article>
+
+        <article class="card">
+          <div class="flex items-center justify-between">
+            <h3 class="h3">Plataformas de reservas</h3>
+          </div>
+          <p class="muted">Conheça as plataformas integradas.</p>
           <div class="mt-24 flex gap-16"><button class="btn btn-primary">Abrir</button><button class="btn">Detalhes</button></div>
         </article>
 
         <article class="card">
           <div class="flex items-center justify-between">
-            <h3 class="h3">App mobile</h3>
-            <span class="badge badge-danger">bloqueado</span>
+            <h3 class="h3">Tem imóvel disponível para locação?</h3>
           </div>
-          <p class="muted">Protótipo navegável e autenticação social.</p>
-          <div class="mt-24 flex gap-16"><button class="btn btn-primary">Abrir</button><button class="btn">Detalhes</button></div>
-        </article>
-
-        <article class="card">
-          <div class="flex items-center justify-between">
-            <h3 class="h3">CMS</h3>
-            <span class="badge badge-info">beta</span>
-          </div>
-          <p class="muted">Gerenciamento de conteúdo e permissões.</p>
-          <div class="mt-24 flex gap-16"><button class="btn btn-primary">Abrir</button><button class="btn">Detalhes</button></div>
+          <p class="muted">Gere mais renda com seu imóvel.</p>
+          <div class="mt-24 flex gap-16"><button class="btn btn-primary">Saiba mais</button></div>
         </article>
       </div>
     </section>
 
     <section class="section row">
       <div class="col-12 col-md-6">
-        <h2 class="h2 mb-24">Contato</h2>
+        <h2 class="h2 mb-24">Entre em contato</h2>
         <form class="form" novalidate>
           <div class="field">
             <label class="label" for="nome">Nome</label>
@@ -140,9 +127,10 @@
             <label class="label" for="assunto">Assunto</label>
             <select class="select" id="assunto" required>
               <option value="">Selecione...</option>
-              <option>Suporte</option>
               <option>Comercial</option>
-              <option>Outros</option>
+              <option>Cotações</option>
+              <option>Reservas</option>
+              <option>Suporte</option>
             </select>
             <span class="error">Selecione um assunto.</span>
           </div>
@@ -158,10 +146,6 @@
         </form>
       </div>
       <div class="col-12 col-md-6">
-        <h2 class="h2 mb-24">Feedback</h2>
-        <div class="alert alert-success mb-24"><strong>Sucesso:</strong>&nbsp;Seu perfil foi atualizado.</div>
-        <div class="alert alert-warning mb-24"><strong>Aviso:</strong>&nbsp;Conexão instável detectada.</div>
-        <div class="alert alert-danger"><strong>Erro:</strong>&nbsp;Não foi possível salvar as alterações.</div>
       </div>
     </section>
   </main>

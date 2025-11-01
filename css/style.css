@@ -247,3 +247,75 @@ dialog.modal{ border:0; border-radius: 16px; padding:0; background: var(--surfac
 .section{ padding: var(--s-32) 0 }
 .surface{ background: var(--surface); border:1px solid rgba(148,163,184,.16); border-radius: var(--radius); padding: var(--s-24) }
 
+body {
+  background: linear-gradient(180deg, #0a1530 0%, #f4f4f5 100%);
+  color: #ecf2ff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #ffffff;
+  text-align: left;
+}
+
+main {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.4); 
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+main h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: left; 
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0;
+  text-align: left; 
+}
+
+main a {
+  color: #ffffff;
+  font-weight: bold; 
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: #8cc9ff;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #dce6ff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+a[href="index.html"] {
+  font-size: 20px;       
+  font-weight: bold;     
+  color: #ffffff;         
+  text-decoration: none;
+  padding-left: 10px;     
+}
+
+a[href="index.html"]:hover {
+  color: #3aa0ff;         
+  text-decoration: underline;
+}

@@ -319,3 +319,14 @@ a[href="index.html"]:hover {
   color: #3aa0ff;         
   text-decoration: underline;
 }
+.btn,
+.btn-primary {
+  font-weight: normal;      
+  font-size: 16px;          
+  text-transform: none;     
+}
+.btn,
+.btn-primary {
+  padding: 8px 20px;       
+  line-height: 1.2;
+}

@@ -1,0 +1,96 @@
+# J Empreendimentos Imobiliários
+
+Este projeto é uma página inicial simples para uma imobiliária fictícia chamada **J Empreendimentos Imobiliários**.  
+O foco é praticar **HTML**, **CSS** e **JavaScript**, usando um menu responsivo, grid em 12 colunas e alguns componentes de interface (cards, formulário, modal, toasts, etc.).
+
+---
+
+## 1. Como visualizar o projeto
+
+1. Baixe/clique na pasta do projeto no seu computador.
+2. Abra o arquivo **`index.html`** em um navegador (Chrome, Edge, Firefox, etc.).
+3. A página de contato também pode ser acessada pelo arquivo **`contato.html`** ou pelo link do próprio site.
+
+> Não é necessário instalar nada nem usar servidor: basta abrir o HTML no navegador.
+
+---
+
+## 2. Estrutura de arquivos
+
+- `index.html`  
+  Página principal com:
+  - Cabeçalho e logo da imobiliária  
+  - Menu com submenus (Serviços, Produtos)  
+  - Cards com links para imóveis, site institucional e plataformas  
+  - Formulário de contato (nome, e-mail, assunto e mensagem)  
+  - Modal de exemplo usando `<dialog>`  
+  - Rodapé com direitos autorais
+
+- `contato.html`  
+  Página simples com os dados de contato:
+  - Título “Fale Conosco”
+  - Link para voltar para a página inicial
+  - E-mail e telefone clicáveis
+
+- `css/style.css`  
+  Arquivo de estilos com:
+  - Definição de cores, tipografia e espaçamentos (tipo mini design system)
+  - Grid em 12 colunas (classes `col-1` até `col-12`)
+  - Estilo do header, menu, cards, botões, formulário e modal
+  - Background com imagem e gradiente
+
+- `scripts/scripts.js`  
+  Arquivo JavaScript responsável por:
+  - Mensagens no console para confirmar o carregamento
+  - Lógica de abertura/fechamento do menu (em telas menores)
+  - Lógica do modal (abrir, fechar e ação de confirmar)
+  - Função `showToast` para exibir notificações
+  - Validação básica do formulário de contato (tamanho mínimo e e-mail válido)
+
+- `Images/Capa_fundo.png`  
+  Imagem usada como fundo da página.
+
+---
+
+## 3. Funcionalidades principais
+
+- **Menu responsivo**  
+  - Botão tipo “hambúrguer” para abrir e fechar o menu no mobile.  
+  - Submenus para organizar Serviços e Produtos.
+
+- **Grid de cards**  
+  - Cards com breve descrição e botões/links para outras partes do site.
+
+- **Formulário com validação**  
+  - Campos obrigatórios: nome, e-mail, assunto e mensagem.  
+  - Validação simples em JavaScript (tamanho mínimo e formato de e-mail).  
+  - Exibição de mensagens de erro e toasts simulando o envio.
+
+- **Modal de exemplo**  
+  - Componente de modal usando `<dialog>`, com botão de cancelar e confirmar.  
+  - Ao confirmar, aparece um toast de sucesso.
+
+- **Design system básico**  
+  - Paleta de cores, tamanhos de fonte, espaçamentos, bordas e sombras padronizados.  
+  - Classes utilitárias para grid (12 colunas), flexbox e botões.
+
+---
+
+## 4. Tecnologias utilizadas
+
+- **HTML5** – estrutura das páginas e semântica básica  
+- **CSS3** – layout, grid, responsividade e estilos gerais  
+- **JavaScript (Vanilla)** – interação com o usuário, validações, toasts e modal
+
+---
+
+## 5. Possíveis melhorias futuras
+
+- Enviar o formulário para um backend real (por enquanto é só simulação).
+- Adicionar mais páginas, como uma listagem de imóveis detalhada.
+- Melhorar a acessibilidade (atalhos de teclado, mais ARIA, etc.).
+- Otimizar o CSS e separar partes do design system.
+
+---
+
+Projeto desenvolvido para fins de estudo/prática em desenvolvimento front-end.
